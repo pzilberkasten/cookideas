@@ -2,8 +2,8 @@ services:
     _defaults:
         public: true
 
-    # If you need to access services in a test, create an alias
+    # If you need to access services in a testController, create an alias
     # and then fetch that alias from the container. As a convention,
-    # aliases are prefixed with test. For example:
+    # aliases are prefixed with testController. For example:
     #
-    # test.App\Service\MyService: '@App\Service\MyService'
+    # testController.App\Service\MyService: '@App\Service\MyService'
