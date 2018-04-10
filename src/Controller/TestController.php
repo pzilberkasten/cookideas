@@ -8,18 +8,18 @@
 
 namespace App\Controller;
 
-
-
 use Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class TestController
+class TestController extends Controller
 {
     /**
-     * @Route("/")
-     * @return Response
+     * @Route("/lucky")
      */
     public function index(){
 
-        return new Response('<html><body>nic takiego</body></html>');
+        return $this->render('base.html.twig');
     }
 }
