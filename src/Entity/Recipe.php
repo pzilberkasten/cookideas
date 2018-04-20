@@ -25,7 +25,7 @@ class Recipe
      *
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
-     * @ORM\Column(type="integer", nullable=false)
+     * @ORM\Column(type="integer", nullable=false, unique=true)
      */
     protected $id;
 
@@ -149,7 +149,7 @@ class Recipe
     /**
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -157,7 +157,7 @@ class Recipe
     /**
      * @return string
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -165,7 +165,7 @@ class Recipe
     /**
      * @return \DateTime
      */
-    public function getCreateData(): \DateTime
+    public function getCreateData(): ?\DateTime
     {
         return $this->createData;
     }
@@ -173,7 +173,7 @@ class Recipe
     /**
      * @return \DateTime
      */
-    public function getEditData(): \DateTime
+    public function getEditData(): ?\DateTime
     {
         return $this->editData;
     }

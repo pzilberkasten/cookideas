@@ -24,7 +24,7 @@ class Tag
      *
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
-     * @ORM\Column(type="integer", nullable=false)
+     * @ORM\Column(type="integer", nullable=false, unique=true)
      */
     protected $id;
 
@@ -133,5 +133,5 @@ class Tag
     {
         return $this->userId;
     }
-    
+
 }
