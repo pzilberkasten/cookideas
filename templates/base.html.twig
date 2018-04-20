@@ -1,12 +1,247 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}CookIdeas{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <style>
+        body {
+            margin: 0 !important;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        div.topLine {
+            width: 100%;
+            height: 30px;
+            background-color: #9FCCBA;
+            display: flex;
+            flex-direction: row;
+            color: white;
+            font-weight: bold;
+        }
+
+        div.logInButton {
+            margin-left: 89%;
+            width: 90px;
+            text-align: center;
+        }
+
+        div.registerButton {
+            width: 90px;
+            text-align: center;
+        }
+
+        div.logInButton:hover, div.registerButton:hover {
+            background-color: white;
+            color: #9FCCBA;
+        }
+
+        div.top {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.name {
+            font-size: 150px;
+            margin-left: -20px;
+            margin-top: 240px;
+            color: #5C3427;
+        }
+
+        div.content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin: 90px !important;
+        }
+
+        div.recipes {
+            width: 45%;
+        }
+
+        hr {
+            border-style: dot-dash;
+            border-width: 1px;
+            background-color: #5C3427;
+        }
+
+        span {
+            color: #999999;
+            font-size: 16px;
+        }
+
+        div.rate > img {
+            width: 120px !important;
+            height: 70px !important;
+            margin-left: -17px;
+        }
+
+        div.tags {
+            color: #999999;
+            font-size: 16px;
+        }
+        .searchInput{
+            margin-left: 50%;
+            width: 260%;
+            height: 30px;
+            outline: none;
+            border-radius: 22px;
+            border: 2px solid #9FCCBA;
+            padding-left: 17px;
+            margin-top: 20px;
+        }
+        div.SearchTag{
+            border-radius: 3px;
+            color: #9FCCBA;
+            font-weight: bold;
+            padding: 3px;
+            height: 25px;
+            margin-left: 8px;
+            margin-top: 80px;
+        }
+        div.SearchTag:hover{
+            border: 1px dashed #9FCCBA;
+            color: #9FCCBA;
+        }
+        .searchButton{
+            width: 130px;
+            height: 30px;
+            background-color: #9FCCBA;
+            border: none;
+            border-radius: 15px;
+            padding: 2px;
+            letter-spacing: 2px;
+            color: white;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 18px;
+            margin-top: 150px;
+            margin-left: -130px;
+        }
+        .searchButton:hover{
+            background-color: #5eb5e0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+<div class="topLine">
+    <div class="logInButton">logowanie</div>
+    <div class="registerButton">rejestracja</div>
+</div>
+<div class="top">
+    <img src="https://i.pinimg.com/564x/f2/b7/0b/f2b70bf1a21b7ab7a79724092e7a8549.jpg" alt="logo CookIdeas"
+         class="logo">
+    <div class="name">Cook Ideas</div>
+</div>
+
+<div class="content">
+    <div class="recipes">
+        <h1>Najnowsze Przepisy</h1>
+        <hr>
+        <div class="recipe">
+            <h3>CIASTO CZEKOLADOWE <span>&nbsp;&nbsp;~autor</span></h3>
+            <div class="tags">
+                #ciastoczekoladowe #czekolada #deser
+            </div>
+            <div class="recipeContent">
+                Dno tortownicy o średnicy 21 cm wyłożyć papierem do pieczenia, zapiąć obręcz. Piekarnik nagrzać do 175
+                stopni C.
+                W rondelku umieścić pokrojone masło oraz połamaną na kosteczki czekoladę, podgrzewać na minimalnym ogniu
+                ciągle
+                mieszając aż składniki się roztopią i otrzymamy gładką masę czekoladową. Odstawić z ognia, dodać mleko i
+                wymieszać
+                na gładką masę.
+                W misce ubić jajka z cukrem (ok. 4 minuty) na puszystą masę. Do drugiej miski przesiać mąkę,
+                dodać proszek do pieczenia i dokładnie wymieszać. Dodać ubite jajka oraz masę czekoladową, zmiksować
+                na minimalnych obrotach miksera lub wymieszać rózgą tylko do połączenia się składników w jednolite
+                ciasto.
+                Wyłożyć je do tortownicy, wstawić do piekarnika i piec przez ok. 43 minuty do suchego patyczka (w
+                większej
+                niż 21 cm formie, ciasto będzie piekło się krócej, ok. 30 - 35 minut, sprawdzamy to patyczkiem
+                wetkniętym w
+                środek, czy jest jeszcze obklejony surowym ciastem).
+                Po upieczeniu wyjąć ciasto z piekarnika i studzić przez ok. 30 minut w formie, następnie wyłożyć na
+                paterę.
+                Polać polewą: do garnka włożyć połamaną na kosteczki czekoladę i pokrojone masło, cały czas mieszając
+                podgrzewać
+                na małym ogniu aż czekolada się roztopi. Od razu odstawić z ognia i polać po cieście.
+            </div>
+            <div class="rate">
+                <img src="https://ak6.picdn.net/shutterstock/videos/32609956/thumb/12.jpg?i10c=img.resize(height:160)">
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="recipe">
+            <h3>PROSTA SZARLOTKA <span>&nbsp;&nbsp;~autor</span></h3>
+            <div class="tags">
+                #prostaszarlotka #jabłecznik #jabłka #deser #ciasto
+            </div>
+            <div class="recipeContent">
+                Niedużą foremkę o wymiarach ok. 21 x 25 cm lub tortownicę o średnicy 24 cm posmarować masłem i wyłożyć
+                papierem do pieczenia.
+                Zagnieść ciasto kruche: do mąki dodać pokrojone w kosteczkę masło oraz smalec, proszek do pieczenia,
+                cukier i cukier wanilinowy. Siekać składniki lub rozdrabniać dłońmi lub mieszadłem miksera na drobną
+                kruszonkę.
+                Dodać jajko i połączyć składniki w jednolite ciasto. Rozpłaszczyć je nieco, zawinąć w folię i włożyć do
+                lodówki.
+                Jabłka obrać, pokroić na ćwiartki i wyciąć gniazda nasienne. Pokroić na plasterki i włożyć do garnka.
+                Dodać cynamon i podgrzewać pod przykryciem przez ok. 10 - 15 minut aż jabłka zmiękną i się rozpadną, w
+                międzyczasie od czasu do czasu zamieszać. Można doprawić cukrem jeśli jabłka są bardzo kwaśne.
+                Piekarnik nagrzać do 180 stopni C. Rozwałkować połowę ciasta podsypując mąką, wylepić spód formy. Dodać
+                jabłka a na nich położyć drugą część rozwałkowanego ciasta. Wstawić do piekarnika i piec przez ok. 35 -
+                40 minut na złoty kolor. Posypać cukrem pudrem.
+            </div>
+            <div class="rate">
+                <img src="https://ak6.picdn.net/shutterstock/videos/32609956/thumb/12.jpg?i10c=img.resize(height:160)">
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="recipe">
+            <h3>MUFFINKI PIERNIKOWE <span>&nbsp;&nbsp;~autor</span></h3>
+            <div class="tags">
+                #muffiny #piernik  #deser #ciasto
+            </div>
+            <div class="recipeContent">
+                Przygotować formę na muffiny i wyłożyć ją 12 papilotkami. Piekarnik nagrzać do 180 stopni C.
+                Do dużej miski wsypać mąkę, dodać cukier, przyprawę piernikową, kawę, cukier wanilinowy, cynamon,
+                proszek do pieczenia, sodę oraz odrobinę soli. Dokładnie wymieszać.
+                Do rondelka wlać mleko z miodem, wymieszać i podgrzać do rozpuszczenia.
+                Do czystej miski wlać olej, maślankę, dodać jajka oraz wódkę, rum lub mleko. Wlać mieszankę mleka i
+                miodu i wymieszać rózgą lub zmiksować.
+                Przelać mokre składniki do suchych i wymieszać lub zmiksować na jednolitą masę bez grudek mąki.
+                Ciasto wlać do papilotek, wstawić do piekarnika, piec przez ok. 20 minut lub do suchego patyczka. Wyjąć,
+                ostudzić. Założyć osłonki ozdobne jeśli mamy.
+            </div>
+            <div class="rate">
+                <img src="https://ak6.picdn.net/shutterstock/videos/32609956/thumb/12.jpg?i10c=img.resize(height:160)">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="search" class="searchInput">
+    </div>
+    <div style="display: flex; flex-direction: row; margin-left: -10px">
+        <div class="SearchTag">#kolacja</div>
+        <div class="SearchTag">#deser</div>
+        <div class="SearchTag">#przekąska</div>
+        <div class="SearchTag">#śniadanie</div>
+        <div class="SearchTag">#obiad</div>
+        <div class="SearchTag">#koktajl</div>
+        <div class="SearchTag">#potreningu</div>
+    </div>
+    <button class="searchButton">
+        SEARCH
+    </button>
+</div>
+</body>
 </html>

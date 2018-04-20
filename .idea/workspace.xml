@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="36bdb612-09e0-4f4f-8270-c8240cb1ce89" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Recipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Recipe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test.html.twig" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,13 +21,29 @@
       <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="518">
+              <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+              <folding>
+                <element signature="e#2239#2245#0#HTML" expanded="true" />
+                <element signature="e#2245#2251#0#HTML" expanded="true" />
+                <element signature="e#4155#4161#0#HTML" expanded="true" />
+                <element signature="e#4161#4167#0#HTML" expanded="true" />
+                <element signature="e#6276#6282#0#HTML" expanded="true" />
+                <element signature="e#6282#6288#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -66,6 +79,7 @@
         <option value="$PROJECT_DIR$/src/Entity/Recipe.php" />
         <option value="$PROJECT_DIR$/src/Form/RecipeType.php" />
         <option value="$PROJECT_DIR$/src/Controller/TestController.php" />
+        <option value="$PROJECT_DIR$/templates/mainStyle.css" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
       </list>
     </option>
@@ -267,6 +281,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../symfony_exercise" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
@@ -302,12 +317,12 @@
       <workItem from="1523460993741" duration="1587000" />
       <workItem from="1523635155189" duration="2255000" />
       <workItem from="1523718589914" duration="3332000" />
-      <workItem from="1524250790265" duration="544000" />
+      <workItem from="1524250790265" duration="6754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32242000" />
+    <option name="totallyTimeSpent" value="38452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="741" extended-state="6" />
@@ -366,20 +381,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/recipe/_form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/recipe/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/RecipeType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -398,6 +399,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="e#2239#2245#0#HTML" expanded="true" />
+            <element signature="e#2245#2251#0#HTML" expanded="true" />
+            <element signature="e#4155#4161#0#HTML" expanded="true" />
+            <element signature="e#4161#4167#0#HTML" expanded="true" />
+            <element signature="e#6276#6282#0#HTML" expanded="true" />
+            <element signature="e#6282#6288#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -682,10 +692,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mainStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="518">
+          <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
+          <folding>
+            <element signature="e#2239#2245#0#HTML" expanded="true" />
+            <element signature="e#2245#2251#0#HTML" expanded="true" />
+            <element signature="e#4155#4161#0#HTML" expanded="true" />
+            <element signature="e#4161#4167#0#HTML" expanded="true" />
+            <element signature="e#6276#6282#0#HTML" expanded="true" />
+            <element signature="e#6282#6288#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
